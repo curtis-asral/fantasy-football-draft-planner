@@ -128,8 +128,8 @@ with st.sidebar:
                 }
     
     with st.expander("Visibility", expanded=True):
-        hide_drafted = st.checkbox("Hide Drafted", value=True)
-        hide_unavail  = st.checkbox("Hide Unavailable", value=True)
+        hide_drafted = st.checkbox("Hide Drafted", value=False)
+        hide_unavail  = st.checkbox("Hide Unavailable", value=False)
         hide_watch    = st.checkbox("Hide Watch", value=False)
         st.session_state.hidden_statuses = {
             s for s, on in zip(
